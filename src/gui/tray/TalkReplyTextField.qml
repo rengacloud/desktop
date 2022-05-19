@@ -28,7 +28,7 @@ Item {
         rightPadding: sendReplyMessageButton.width
         visible: model.messageSent === ""
 
-        color: Style.ncSecondaryTextColor
+        color: Style.ncTextColor
         placeholderText: qsTr("Reply to …")
 
         onAccepted: root.sendReplyMessage()
