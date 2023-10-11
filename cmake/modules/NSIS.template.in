@@ -184,6 +184,7 @@ VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "${VERSION}"
       StrCmp $LANGUAGE ${LANG_POLISH} Polish 0
       StrCmp $LANGUAGE ${LANG_TURKISH} Turkish 0
       StrCmp $LANGUAGE ${LANG_NORWEGIAN} Norwegian 0
+	  StrCmp $LANGUAGE ${LANG_RUSSIAN} Russian 0
       StrCmp $LANGUAGE ${LANG_PORTUGUESEBR} Brazilian EndLanguageCmp
       German:
       !include "${source_path}/admin/win/nsi/l10n\German.nsh"
@@ -226,6 +227,9 @@ VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "${VERSION}"
       Goto EndLanguageCmp
       Brazilian:
       !include "${source_path}/admin/win/nsi/l10n\PortugueseBR.nsh"
+      Goto EndLanguageCmp
+	  Russian:
+      !include "${source_path}/admin/win/nsi/l10n\Russian.nsh"
       Goto EndLanguageCmp
       Norwegian:
       !include "${source_path}/admin/win/nsi/l10n\Norwegian.nsh"

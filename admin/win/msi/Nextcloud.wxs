@@ -30,9 +30,9 @@
     <Product Name="$(var.AppName)" Manufacturer="$(var.AppVendor)"
         Id="*" 
         UpgradeCode="$(var.UpgradeCode)"
-        Language="1033" Codepage="$(var.codepage)" Version="$(var.VerFull)">
+        Language="1049" Codepage="$(var.codepage)" Version="$(var.VerFull)">
     <Package Id="*" Keywords="Installer" Description="$(var.AppName) $(var.VerDesc)" Manufacturer="$(var.AppVendor)"
-        InstallerVersion="300" Platform="$(var.Platform)" Languages="1033" Compressed="yes" SummaryCodepage="$(var.codepage)" InstallScope="perMachine" />
+        InstallerVersion="300" Platform="$(var.Platform)" Languages="1049" Compressed="yes" SummaryCodepage="$(var.codepage)" InstallScope="perMachine" />
 
     <!--
         Upgrading: Since we always want to allow up-/downgrade, we don't specify a maximum version, thus
